@@ -61,21 +61,21 @@
             <form class="form">
               <label class="form-field">
                 <span class="form-label">Ім'я</span>
-                <input type="text" class="form-input" />
+                <input type="text" name="name" class="form-input" />
                 <svg class="icon-form" width="18px" height="18px">
                   <use href="./images/iconc.svg#icon-person-black"></use>
                 </svg>
               </label>
               <label class="form-field">
                 <span class="form-label">Телефон</span>
-                <input type="tel" class="form-input" />
+                <input type="tel" name="phone" class="form-input" />
                 <svg class="icon-form" width="18px" height="18px">
                   <use href="./images/iconc.svg#icon-phone-black"></use>
                 </svg>
               </label>
               <label class="form-field">
                 <span class="form-label">Пошта</span>
-                <input type="email" class="form-input" />
+                <input type="email" name="mail" class="form-input" />
                 <svg class="icon-form" width="18px" height="18px">
                   <use href="./images/iconc.svg#icon-email-black"></use>
                 </svg>
@@ -89,7 +89,7 @@
                 ></textarea>
               </label>
               <label class="check-label">
-                <input type="checkbox" class="visually-hidden input-check" />
+                <input type="checkbox" name="accept" class="visually-hidden input-check" />
                 <svg class="icon-check" width="16px" height="15px">
                   <use href="./images/iconc.svg#icon-icon-check"></use>
                 </svg>
@@ -546,6 +546,20 @@
                 </a>
               </li>
             </ul>
+          </div>
+          <div class="subscribe">
+            <p class="text-footer">Підпишіться на розсилку</p>
+            <form class="form-footer">
+              <input type="text" name="mail-footer" placeholder="E-mail" class="input-footer" />
+              <button type="submit" class="button-footer">
+                <label class="button-subscribe">
+                  <span class="text-subscribe">Підписатися</span>
+                  <svg class="icon" width="24px" height="24px">
+                    <use href="./images/iconc.svg#icon-icon-send"></use>
+                  </svg>
+                </label>
+              </button>
+            </form>
           </div>
         </div>
       </div>
