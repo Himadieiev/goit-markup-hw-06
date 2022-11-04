@@ -814,6 +814,8 @@ address {
 
 .form-footer {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .input-footer {
@@ -831,6 +833,10 @@ address {
 }
 
 .button-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 200px;
   height: 50px;
   background: #2196F3;
@@ -840,18 +846,13 @@ address {
 }
 
 .form-footer ::placeholder {
+  display: flex;
+  align-items: center;
+
   font-size: 16px;
   line-height: 1.25;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.button-subscribe {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .text-subscribe {
