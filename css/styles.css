@@ -325,6 +325,171 @@ main > .section-one {
   cursor: pointer;
 }
 
+.icon-close {
+  fill: #000000;
+}
+
+.close-button:hover .icon-close {
+  fill: var(--hoverfocus-color);
+}
+
+.close-button:focus .icon-close {
+  fill: var(--hoverfocus-color);
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+.text-modal {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.form {
+  width: 448px;
+  /* height: 342px; */
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.form-field {
+  position: relative;
+
+  display: block;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 4px;
+  text-align: left;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.form-input {
+  width: 448px;
+  height: 40px;
+  margin-bottom: 10px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-textarea {
+  width: 448px;
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+::placeholder {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  ;
+}
+
+.icon-form {
+  position: absolute;
+  left: 12px;
+  top: 29px;
+
+  display: block;
+
+  fill: #212121;
+}
+
+.form-input:focus+.icon-form {
+  fill: var(--hoverfocus-color);
+}
+
+.form-input:focus {
+  border-color: var(--hoverfocus-color);
+}
+
+.form-textarea:focus {
+  border-color: var(--hoverfocus-color);
+}
+
+.check-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;  
+  color: #757575;
+}
+
+.check-link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;  
+  color: #2196F3;
+}
+
+.check-label {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: 12px;
+  text-align: left;
+}
+
+.icon-check {
+  margin-right: 8.38px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
+
+.input-check:checked + .icon-check {
+  background-color: var(--hoverfocus-color);
+  border: 2px solid var(--hoverfocus-color);
+  border-radius: 2px;
+}
+
+.button-send {
+  width: 200px;
+  height: 50px;
+
+  background-color: #2196F3;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button-send:hover,
+.button-send:focus {
+  background-color: #188CE8;
+}
+
 /* -------------------------------Особенности студии------------------------------------ */
 .feature {
   display: flex;
