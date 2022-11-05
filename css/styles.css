@@ -297,9 +297,9 @@ main > .section-one {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-    
+   
+  padding: 40px;
   width: 528px;
-  height: 581px;
 
   background-color:#FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -345,9 +345,6 @@ textarea {
 }
 
 .text-modal {
-  margin-top: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
   margin-bottom: 12px;
 
   font-weight: 700;
@@ -355,12 +352,6 @@ textarea {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.form {
-  width: 448px;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .form-field {
@@ -425,15 +416,15 @@ textarea {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus+.icon-form {
+.form-input:focus+.icon-form, .form-input:hover+.icon-form {
   fill: var(--hoverfocus-color);
 }
 
-.form-input:focus {
+.form-input:focus, .form-input:hover {
   border-color: var(--hoverfocus-color);
 }
 
-.form-textarea:focus {
+.form-textarea:focus, .form-textarea:hover {
   border-color: var(--hoverfocus-color);
 }
 
@@ -466,6 +457,7 @@ textarea {
   margin-right: 8.38px;
   border: 2px solid #212121;
   border-radius: 2px;
+  cursor: pointer;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -809,7 +801,7 @@ address {
 }
 
 .subscribe {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .form-footer {
@@ -826,6 +818,10 @@ address {
   width: 358px;
   height: 50px;
 
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -843,6 +839,7 @@ address {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 0;
+  cursor: pointer;
 }
 
 .form-footer ::placeholder {
